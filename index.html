@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script defer type="module" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="./icons/logo.png" alt="" class="header__logo">
+            <div class="header__wrapper">
+                <div class="header__adreas">Адрес: город Москва ул. Спартаковская, д. 11</div>
+                <div class="header__socials">
+                    <a href="#" class="header__social"><img src="./icons/social_media/telegram.svg" alt=""></a>
+                    <a href="#" class="header__social"><img src="./icons/social_media/VK.svg" alt=""></a>
+                    <a href="#" class="header__social"><img src="./icons/social_media/whatsapp.svg" alt=""></a>
+                    <a href="#" class="header__social"><img src="./icons/social_media/youtube.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <a href="tel:+74849099090" class="header__phone">+7 (484) 909 9090</a>
+                <div class="header__time">
+                    Режим работы: <br>
+                    c 09:00 до 21:00 без выходных
+                </div>
+            </div>
+        </div>
+        <ul class="header__links">
+            <li class="header__link"><a href="#choice">Калькулятор</a></li>
+            <li class="header__link"><a href="#selection">Подбор авто</a></li>
+            <li class="header__link"><a href="#reasons">Преимущества</a></li>
+            <li class="header__link"><a href="#feedback">Оставить заявку</a></li>
+            <li class="header__link"><a href="#reviews">Отзывы</a></li>
+        </ul>
+    </header>
+    <section class="promo" id="promo">
+        <div class="promo__info">
+            <h1>АВТО ИЗ КИТАЯ С ДОСТАВКОЙ <br> ПО ВСЕЙ РОССИИ</h1>
+            <div class="promo__price">Считайте онлайн цены под ключ с экономией до 20-30%</div>
+        </div>
+        <img src="./img/promo.png" alt="" class="promo__img">
+    </section>
+    <section class="choice" id="choice">
+        <img src="./img/border.png" alt="" class="wrapper">
+        <img src="./img/bg.png" alt="" class="bg">
+        <form method="post" class="form" id="form-calculate">
+            <div class="form__item">
+                <h2 class="form__title">Выберите марку и модель</h2>
+                <p class="form__descr">
+                    Рассчитаем цену с завода в Китае по прямому дилерскому контракту
+                    в реальном времени и по текущему курсу
+                </p>
+
+                <div class="form__selects">
+                    <select name="select_mark" id="select1">
+                        <option>Марка</option>
+                        <option>KIA</option>
+                        <option>Toyota</option>
+                    </select>
+                    <span class="error_select1"></span>
+                    <select name="select_model" id="select2">
+                        <option>Модель</option>
+                        <option>Carnival</option>
+                        <option>Cerato (K3)</option>
+                        <option>Cerato EV (K3 EV)</option>
+                        <option>Forte</option>
+                        <option>K5</option>
+                    </select>
+                    <error class="select2"></error>
+                </div>
+                <div class="form__subtitle">
+                    Обновляем цены ежедневно
+                </div>
+            </div>
+
+            <div class="form__item">
+                <p class="form__descr form__descr-1">
+                    Для расчёта условий поставки укажите город доставки автомобиля,
+                    а так же номер для связи
+                </p>
+                <div class="form__fields">
+                    <input type="text" placeholder="Город получения автомобиля" class="form__field" name="field_city"
+                        id="field1" />
+                    <span class="error_field1"></span>
+                    <input type="text" placeholder="Ваш телефон" class="form__field" name="field_phone" id="field2" />
+                    <span class="error_field2"></span>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <div class="form__row">
+                    <p class="form__currency">CNY = 13.34</p>
+                    <p class="form__currency">USD = 96.64</p>
+                    <p class="form__currency">25.09.23</p>
+                </div>
+                <div class="form__submit">
+                    <button class="form__button" id="form_button">Рассчитать</button>
+                </div>
+            </div>
+        </form>
+        <div class="choice__main">
+            <div class="choice__titles">
+                <div class="title1">РАССЧИТАЙТЕ</div>
+                <div class="title2">СТОИМОСТЬ</div>
+            </div>
+            <div class="choice__image">
+                <img src="./img/choice_car.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <section class="selection" id="selection">
+        <h2 class="selection__title">ЗАТРУДНЯЕТЕСЬ С ВЫБОРОМ?</h2>
+        <div class="selection__info">
+            <img src="./img/border2.png" alt="" class="wrapper">
+            <div class="selection__descr">
+                <div class="descr1">Отметьте необходимые для вас <span>4 параметра.</span></div>
+                <div class="descr2"><span>Мы предложим</span> для вас несколько выгодных вариантов автомобилей
+                    с учётом всех ваших <span>пожеланий.</span></div>
+            </div>
+            <h2 class="selection__critery">ПОДБЕРИТЕ АВТО <br> ПО КРИТЕРИЯМ</h2>
+        </div>
+        <form method="post" class="critery" id="critery">
+            <div class="critery__1">
+                <div class="critery__item">
+                    <div class="critery__title">Дополнительно</div>
+                    <div class="wrap wrap-1">
+                        <label class="radio">
+                            <input type="radio" name="other" id="new">
+                            Новое авто
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio radio-b_y">
+                            <input type="radio" name="other" id="b_y">
+                            Б/у
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="critery__item">
+                    <div class="critery__title">Пробег</div>
+                    <div class="wrap">
+                        <label class="radio">
+                            <input type="radio" name="mileage" id="under10">
+                            До 10 000 км
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="mileage" id="under30">
+                            10 000 - 30 000 км
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="mileage" id="under50">
+                            30 000 - 50 000 км
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="critery__2">
+                <div class="critery__item">
+                    <div class="critery__title">Тип топлива</div>
+                    <div class="wrap wrap-3">
+                        <label class="radio">
+                            <input type="radio" name="fuel" id="electro">
+                            Электро
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio radio-hybrid">
+                            <input type="radio" name="fuel" id="hybrid">
+                            Гибрид
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="fuel" id="petrol">
+                            Бензин
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio radio-dizel">
+                            <input type="radio" name="fuel" id="dizel">
+                            Дизель
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="critery__item">
+                    <div class="critery__title">Ваш бюджет</div>
+                    <div class="wrap wrap-4" id="budget">
+                        <label class="radio">
+                            <input type="radio" name="budget" id="10usd">
+                            До 10 000 <span class="small">USD</span>
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="budget" id="15usd">
+                            10 000 - 15 000 <span class="small">USD</span>
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="budget" id="20usd">
+                            15 000 - 20 000 <span class="small">USD</span>
+                            <span class="check"></span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="budget" id="20plususd">
+                            От 20 000 <span class="small">USD</span>
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="critery__item critery__item-type">
+                <div class="critery__title">Тип авто</div>
+                <div class="wrap">
+                    <label class="radio">
+                        <img src="./img/cars/sedan.png" alt="">
+                        <input type="radio" name="type" id="sedan">
+                        <span class="check"></span>
+                        Седан
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/hetchback.png" alt="">
+                        <input type="radio" name="type" id="hetchback">
+                        <span class="check"></span>
+                        Хэтчбек
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/cupe.png" alt="">
+                        <input type="radio" name="type" id="cupe">
+                        <span class="check"></span>
+                        Купе
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/cabrio.png" alt="">
+                        <input type="radio" name="type" id="cabrio">
+                        <span class="check"></span>
+                        <span class="cabrio">Кабриолет</span>
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/crossover.png" alt="">
+                        <input type="radio" name="type" id="crossover">
+                        <span class="check"></span>
+                        Кроссовер
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/pikup.png" alt="">
+                        <input type="radio" name="type" id="pikup">
+                        <span class="check"></span>
+                        Пикап
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/offroad.png" alt="">
+                        <input type="radio" name="type" id="offroad">
+                        <span class="check"></span>
+                        Внедорожник
+                    </label>
+                    <label class="radio">
+                        <img src="./img/cars/minivan.png" alt="">
+                        <input type="radio" name="type" id="minivan">
+                        <span class="check"></span>
+                        Минивэн
+                    </label>
+                </div>
+            </div>
+            <div class="critery__item critery__item-submit">
+                <button type="submit" class="btn" id="selection_btn">Подобрать авто</button>
+            </div>
+        </form>
+    </section>
+    <section class="reasons" id="reasons">
+        <h2 class="reasons__title">ПОЧЕМУ <span>МЫ</span></h2>
+        <div class="reasons__container">
+            <img src="./icons/arrows/arrow1.svg" alt="" id="arrow1">
+            <img src="./icons/arrows/arrow2.svg" alt="" id="arrow2">
+            <img src="./icons/arrows/arrow3.svg" alt="" id="arrow3">
+            <img src="./icons/arrows/arrow4.svg" alt="" id="arrow4">
+            <div class="reasons__col">
+                <div class="reason reason-first">
+                    <div class="reason__title">Бот, который работает для вас 24/7</div>
+                    <div class="reason__descr">Оформите заявку в любое удобное для вас время</div>
+                    <div class="reason__btn"><span>Связаться с ботом</span> <img
+                            src="./icons/social_media/telegram_white.svg" alt=""></div>
+                </div>
+                <div class="reason">
+                    <div class="reason__title">Подбор как новых, так и б/у авто</div>
+                    <div class="reason__descr">Новые с завода или б/у у проверенных диллеров</div>
+                </div>
+            </div>
+            <img src="./img/auto_up.png" alt="" class="reasons__img">
+            <div class="reasons__col">
+                <div class="reason">
+                    <div class="reason__title">Личный кабинет</div>
+                    <div class="reason__descr">Отслеживайте статус авто онлайн</div>
+                </div>
+                <div class="reason">
+                    <div class="reason__title">Фиксированная цена за услуги 750$</div>
+                    <div class="reason__descr">Никаких дополнительных оплат на протяжении всей сделки</div>
+                </div>
+            </div>
+        </div>
+        <div class="get_consultate">
+            <h2 class="get_consultate__title">ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</h2>
+            <div class="get_consultate__descr">Подберем для вас лучший вариант, пришлем актуальную стоимость и расскажем
+                схему работы</div>
+            <img src="./img/auto_forw.png" alt="" class="get_consultate__img">
+            <div class="buttons">
+                <button class="get_consultate__btn"><span>Получить консультацию</span></button>
+                <button class="get_consultate__telegram"><span>Написать в Telegram</span> <img
+                        src="./icons/social_media/telegram.svg" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <h2 class="reviews__title">ОТЗЫВЫ</h2>
+        <div class="reviews__container">
+            <div class="textreviews">
+                <div class="review">
+                    <img src="./img/profile_img.png" alt="" class="review__img">
+                    <div class="review__title">Алексей Артемов</div>
+                    <div class="review__descr">
+                        Надежный сервис по подбору авто. Доброжелательный персонал, приятная атмосфера в командекоторый
+                        вызывает доверие
+                    </div>
+                    <a href="#" class="review__link"><img src="./icons/social_media/avito.svg" alt=""></a>
+                </div>
+                <div class="review review-2">
+                    <img src="./img/profile_img.png" alt="" class="review__img">
+                    <div class="review__title">Алексей Артемов</div>
+                    <div class="review__descr">
+                        Надежный сервис по подбору авто. Доброжелательный персонал, приятная атмосфера в командекоторый
+                        вызывает доверие
+                    </div>
+                    <a href="#" class="review__link"><img src="./icons/social_media/avito.svg" alt=""></a>
+                </div>
+                <div class="review review-3">
+                    <img src="./img/profile_img.png" alt="" class="review__img">
+                    <div class="review__title">Алексей Артемов</div>
+                    <div class="review__descr">
+                        Надежный сервис по подбору авто. Доброжелательный персонал, приятная атмосфера в командекоторый
+                        вызывает доверие
+                    </div>
+                    <a href="#" class="review__link"><img src="./icons/social_media/avito.svg" alt=""></a>
+                </div>
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line line-active"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+            <div class="mediareviews">
+                <div class="mediareviews__tabs">
+                    <button class="mediareviews__btn mediareviews__btn-active" id="photo_review">ФОТО-ОТЗЫВЫ</button>
+                    <button class="mediareviews__btn" id="video_review">ВИДЕО-ОТЗЫВЫ</button>
+                </div>
+                <div class="mediareviews__container mediareviews__container-active" id="photo_container">
+                    <div class="mediareviews__col">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                    </div>
+                    <div class="mediareviews__col">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                        <img src="./img/photo_review.png" alt="" class="mediareviews__img">
+                    </div>
+                </div>
+                <div class="mediareviews__container mediareviews__container-video" id="video_container">
+                    <div class="mediareviews__col">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                        <img src="./img/video_preview.png" alt="" class="mediareviews__video">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="reviews__btn">Оставить отзыв</button>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="feedback__container">
+            <div class="feedback__titles">
+                <div class="title1">НЕ НАШЛИ</div>
+                <div class="title2">ЧТО ИСКАЛИ?</div>
+            </div>
+            <div class="feedback__descr">
+                <div class="descr1">
+                    Оставьте свой контакт и мы самостоятельно подберём автомобиль по вашим параметрам.
+                </div>
+                <div class="descr2">
+                    Наши лучшие менеджеры расскажут вам о преимуществах того или иного автомобиля, <br>а так же
+                    расскажут
+                    обо всех этапах доставки авто.
+                </div>
+            </div>
+            <form class="feedback_form">
+                <input type="text" placeholder="Ваше имя" class="feedback_form__name">
+                <input type="phone" placeholder="+7 (___) ___ ____" class="feedback_form__phone">
+                <button class="feedback_form__btn">Отправить</button>
+            </form>
+        </div>
+        <img src="./img/feedback.png" alt="feedback__car">
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./icons/logo.png" alt="" class="footer__logo">
+            <div class="footer__wrapper">
+                <div class="footer__adreas">Адрес: город Москва ул. Спартаковская, д. 11</div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social"><img src="./icons/social_media/telegram.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./icons/social_media/VK.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./icons/social_media/whatsapp.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./icons/social_media/youtube.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <a href="tel:+74849099090" class="footer__phone">+7 (484) 909 9090</a>
+                <div class="footer__time">
+                    Режим работы: <br>
+                    c 09:00 до 21:00 без выходных
+                </div>
+            </div>
+        </div>
+    </footer>
+    <form method="post" class="consultation">
+        <div class="consultation__arrow">
+            <img src="./img/modal-window/arrow-module.svg" alt="">
+        </div>
+        <div class="consultation__title">
+            <h1>ПОЛУЧИТЬ<br>КОНСУЛЬТАЦИЮ</h1>
+        </div>
+        <div class="consultation__title">
+            <input type="text" class="consultation__name" placeholder="Ваше имя">
+            <input type="phone" class="consultation__phone" placeholder="+ 7 (___) ___ ____">
+            <button class="consultation__btn">Отправить</button>
+        </div>
+        <div class="consultation__link">
+            <h2>ИЛИ НАПИШИТЕ НАМ</h2>
+        </div>
+        <div class="consultation__image">
+            <a href="#"><img src="./icons/social_media/telegram.svg" alt=""></a>
+            <a href="#"><img src="./icons/social_media/whatsapp.svg" alt=""></a>
+        </div>
+    </form>
+    <form class="reviews-form">
+        <div class="reviews-form__arrow">
+            <img src="./icons/close.svg" alt="">
+        </div>
+        <div class="reviews-form__title">
+            <h3>ОСТАВИТЬ ОТЗЫВ</h3>
+        </div>
+        <div class="reviews-form__title">
+            <input type="text" class="reviews-form__name" placeholder="Ваше имя">
+            <input type="phone" class="reviews-form__phone" placeholder="+ 7 (___) ___ ____">
+            <textarea cols="100" rows="100" class="reviews-form__textarea" placeholder="Введите текст"></textarea>
+            <label for="images" class="reviews-form__chooseimg">
+                <img src="./icons/add.svg" alt="Добавить изображение">
+                <span>Добавить изображение</span>
+                <input type="file" id="images" accept="image/*" style="display: none">
+            </label>
+            <p class="reviews-form__postscript">Загрузите до 5 изображений в формате *jpg, *png или *pdf</p>
+            <button class="reviews-form__btn">Отправить</button>
+        </div>
+        <div class="reviews-form__link">
+            <h2></h2>
+        </div>
+    </form>
+</body>
+
+</html>
